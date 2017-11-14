@@ -1,0 +1,86 @@
+<Workspace Version="1.3.1.1736" X="-1601.37574503718" Y="321.830810401194" zoom="1.13914697380889" ScaleFactor="1" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <CoreNodeModels.Watch guid="2c8a15fa-0f47-406c-ac06-2b405a6887ed" type="CoreNodeModels.Watch" nickname="Watch" x="2634.47190285023" y="424.627477494727" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Watch guid="ca53355c-6b8d-4384-acfd-234c144f96c9" type="CoreNodeModels.Watch" nickname="Watch" x="2092.00330826286" y="425.311523071291" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <PythonNodeModels.PythonNode guid="0262eab9-b314-41d1-b3eb-ad216a732e6a" type="PythonNodeModels.PythonNode" nickname="Python Script" x="1913.27309516306" y="422.091987888211" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="1">
+      <PortInfo index="0" default="False" />
+      <Script>import re  # Imports the Regular Expression Module
+
+sheets = IN[0]  # Assigns the Input IN[0] to the variable `sheets`
+pattern = '[A-Z]-\d-\d{4}'  # Creates a regular expression pattern, explained below
+bad_sheets = []  # Creates an empty list. We will use this to store sheets
+# Iterates through all sheets.
+for sheet in sheets:
+    sheet_number= sheet.SheetNumber  # Get sheet name and assign to variable
+    # re.search takes a pattern, and a sheet name as arguments
+    match = re.search(pattern , sheet_number)
+    # if a match is not found, match will be None, else it will return the match
+    if not match:
+        bad_sheets.append(sheet)
+OUT = bad_sheets</Script>
+    </PythonNodeModels.PythonNode>
+    <DSRevitNodesUI.ElementsOfCategory guid="b78f1dd6-3d10-44d1-8040-c125c4757892" type="DSRevitNodesUI.ElementsOfCategory" nickname="All Elements of Category" x="1686.01011235198" y="419.074916769251" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </DSRevitNodesUI.ElementsOfCategory>
+    <DSRevitNodesUI.Categories guid="e9ad2f54-49cd-466a-96a2-6ff0fc404132" type="DSRevitNodesUI.Categories" nickname="Categories" x="1493.78625259678" y="415.478398019251" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="422:Sheets" />
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="889fa6b2-f604-4912-a320-0b65e0a8a70a" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.Name" x="2403.10475420339" y="425.895693551127" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.Name">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Watch guid="e76b842c-d3df-4c8c-bc38-430d4a4117f3" type="CoreNodeModels.Watch" nickname="Watch" x="2384.36538174147" y="-52.2193145453494" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="b384f4fc-cc36-4ab9-84e0-6364f6d66805" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.Name" x="2140.70833519569" y="-50.9510984889495" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.Name">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <PythonNodeModels.PythonNode guid="5ea3731d-6742-4802-a5f8-52adb0a9164f" type="PythonNodeModels.PythonNode" nickname="Python Script" x="1917.26516926285" y="-54.5353717920023" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="1">
+      <PortInfo index="0" default="False" />
+      <Script>import re
+
+sheets = IN[0]
+
+pattern = '[A-Z]-\d-\d{4}'
+bad_names = []</Script>
+    </PythonNodeModels.PythonNode>
+    <DSRevitNodesUI.ElementsOfCategory guid="878fbd1f-54ee-4572-a498-db490e4bd123" type="DSRevitNodesUI.ElementsOfCategory" nickname="All Elements of Category" x="1695.53069825957" y="-53.5325017933893" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </DSRevitNodesUI.ElementsOfCategory>
+    <DSRevitNodesUI.Categories guid="19955eeb-ce15-4cda-9336-ebf0885471b6" type="DSRevitNodesUI.Categories" nickname="Categories" x="1503.30683850437" y="-57.1290205433892" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="422:Sheets" />
+    <CoreNodeModels.Watch guid="b5291a46-cee8-4e1c-8f7e-d9c0d59c6a6c" type="CoreNodeModels.Watch" nickname="Watch" x="1914.76722321544" y="58.6773862508754" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="ca53355c-6b8d-4384-acfd-234c144f96c9" start_index="0" end="889fa6b2-f604-4912-a320-0b65e0a8a70a" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="0262eab9-b314-41d1-b3eb-ad216a732e6a" start_index="0" end="ca53355c-6b8d-4384-acfd-234c144f96c9" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b78f1dd6-3d10-44d1-8040-c125c4757892" start_index="0" end="0262eab9-b314-41d1-b3eb-ad216a732e6a" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="e9ad2f54-49cd-466a-96a2-6ff0fc404132" start_index="0" end="b78f1dd6-3d10-44d1-8040-c125c4757892" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="889fa6b2-f604-4912-a320-0b65e0a8a70a" start_index="0" end="2c8a15fa-0f47-406c-ac06-2b405a6887ed" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b384f4fc-cc36-4ab9-84e0-6364f6d66805" start_index="0" end="e76b842c-d3df-4c8c-bc38-430d4a4117f3" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="5ea3731d-6742-4802-a5f8-52adb0a9164f" start_index="0" end="b384f4fc-cc36-4ab9-84e0-6364f6d66805" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="878fbd1f-54ee-4572-a498-db490e4bd123" start_index="0" end="5ea3731d-6742-4802-a5f8-52adb0a9164f" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="878fbd1f-54ee-4572-a498-db490e4bd123" start_index="0" end="b5291a46-cee8-4e1c-8f7e-d9c0d59c6a6c" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="19955eeb-ce15-4cda-9336-ebf0885471b6" start_index="0" end="878fbd1f-54ee-4572-a498-db490e4bd123" end_index="0" portType="0" />
+  </Connectors>
+  <Notes>
+    <Dynamo.Graph.Notes.NoteModel guid="6a69a433-4883-4485-8ea4-a73eaef56c4b" text="Select Sheets that match the pattern X-1-0001" x="1501.15183568933" y="-109.764290232269" />
+  </Notes>
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="977d26c2-393a-40b5-8264-038700b8d412" annotationText="Solution" left="1483.78625259678" top="369.478398019251" width="1285.68565025345" height="204.149079475476" fontSize="30" InitialTop="415.478398019251" InitialHeight="230.561243802601" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="2c8a15fa-0f47-406c-ac06-2b405a6887ed" />
+      <Models ModelGuid="ca53355c-6b8d-4384-acfd-234c144f96c9" />
+      <Models ModelGuid="0262eab9-b314-41d1-b3eb-ad216a732e6a" />
+      <Models ModelGuid="b78f1dd6-3d10-44d1-8040-c125c4757892" />
+      <Models ModelGuid="e9ad2f54-49cd-466a-96a2-6ff0fc404132" />
+      <Models ModelGuid="889fa6b2-f604-4912-a320-0b65e0a8a70a" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-85.0933817479843" eyeY="107.462656975219" eyeZ="24.8121513489676" lookX="13.4399995803833" lookY="-14.5600004196167" lookZ="-64.9599990844727" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

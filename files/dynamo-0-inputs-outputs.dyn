@@ -1,0 +1,65 @@
+<Workspace Version="1.3.1.1736" X="6.80265391260411" Y="68.394451865045" zoom="1.30054220413566" ScaleFactor="1" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <CoreNodeModels.Input.Filename guid="177dfc0e-9c46-4327-8278-12daf0b8dbfe" type="CoreNodeModels.Input.Filename" nickname="File Path" x="178.333132307894" y="77.5591168902417" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>D:\Dropbox\Bin\AU\files\external.py</System.String>
+      <HintPath>D:\Dropbox\Bin\AU\files\external.py</HintPath>
+    </CoreNodeModels.Input.Filename>
+    <CoreNodeModels.Input.FileObject guid="8dabac80-4a6e-4778-bba2-a78c50871cfa" type="CoreNodeModels.Input.FileObject" nickname="File.FromPath" x="382.638214344069" y="77.6973809653487" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Input.FileObject>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="652ced18-3ee5-4806-958c-a0347884af6e" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="File.ReadText" x="525.664404690582" y="78.3947619306974" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.File.ReadText@var">
+      <PortInfo index="0" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <PythonNodeModels.PythonStringNode guid="6a592657-152d-423b-abbe-75c38da8e57b" type="PythonNodeModels.PythonStringNode" nickname="Python Script From String" x="710.73558162939" y="79.2113009391209" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </PythonNodeModels.PythonStringNode>
+    <CoreNodeModels.Watch guid="7a300481-be94-4230-9959-83d31d95d46e" type="CoreNodeModels.Watch" nickname="Watch" x="914.939025346511" y="80.0073231425231" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <PythonNodeModels.PythonNode guid="33fca713-ea57-46be-ba75-30053bc0056c" type="PythonNodeModels.PythonNode" nickname="Python Script" x="406.034196822658" y="-283.020324440851" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <Script>import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+#The inputs to this node will be stored as a list in the IN variables.
+dataEnteringNode = IN
+
+#Assign your output to the OUT variable.
+OUT = 0</Script>
+    </PythonNodeModels.PythonNode>
+    <CoreNodeModels.Watch guid="9a66ead0-8b59-4eba-bfd4-ca04f9705c19" type="CoreNodeModels.Watch" nickname="Watch" x="625.310463420025" y="-283.020324440851" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Range guid="749ab9b7-93f5-44f4-b73a-5796ae8008aa" type="CoreNodeModels.Range" nickname="Range" x="176.463269821659" y="-229.488090341963" isVisible="true" isUpstreamVisible="true" lacing="Longest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="True" />
+      <PortInfo index="1" default="True" />
+      <PortInfo index="2" default="True" />
+    </CoreNodeModels.Range>
+    <CoreNodeModels.Input.StringInput guid="398a4233-2c34-4635-a2db-7d62ed67566c" type="CoreNodeModels.Input.StringInput" nickname="String" x="176.463269821659" y="-315.963237732474" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>Hello</System.String>
+      <System.String value="Hello" />
+    </CoreNodeModels.Input.StringInput>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="177dfc0e-9c46-4327-8278-12daf0b8dbfe" start_index="0" end="8dabac80-4a6e-4778-bba2-a78c50871cfa" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="8dabac80-4a6e-4778-bba2-a78c50871cfa" start_index="0" end="652ced18-3ee5-4806-958c-a0347884af6e" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="652ced18-3ee5-4806-958c-a0347884af6e" start_index="0" end="6a592657-152d-423b-abbe-75c38da8e57b" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="6a592657-152d-423b-abbe-75c38da8e57b" start_index="0" end="7a300481-be94-4230-9959-83d31d95d46e" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="33fca713-ea57-46be-ba75-30053bc0056c" start_index="0" end="9a66ead0-8b59-4eba-bfd4-ca04f9705c19" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="749ab9b7-93f5-44f4-b73a-5796ae8008aa" start_index="0" end="33fca713-ea57-46be-ba75-30053bc0056c" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="398a4233-2c34-4635-a2db-7d62ed67566c" start_index="0" end="33fca713-ea57-46be-ba75-30053bc0056c" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="8e6c7489-b199-49e1-8f67-1cabebbd9edd" annotationText=".py file" left="168.333132307894" top="31.5591168902417" width="184" height="140" fontSize="30" InitialTop="77.5591168902417" InitialHeight="124" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="177dfc0e-9c46-4327-8278-12daf0b8dbfe" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-30.7738742828369" eyeY="89.7373046875" eyeZ="32.4160118103027" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>

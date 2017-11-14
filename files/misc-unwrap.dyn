@@ -1,0 +1,76 @@
+<Workspace Version="1.3.1.1736" X="324.625798637494" Y="232.056785219929" zoom="0.670998674854748" ScaleFactor="1" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <DSRevitNodesUI.Views guid="1a97202e-ad05-4495-b16c-41b89391cdd8" type="DSRevitNodesUI.Views" nickname="Views" x="215.631659339665" y="100.658798694172" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="18:1ST FLOOR" />
+    <PythonNodeModels.PythonStringNode guid="ffe05f62-8d1e-414e-b021-37a8346a719f" type="PythonNodeModels.PythonStringNode" nickname="Python Script From String" x="470.928652706814" y="72.3737787253159" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </PythonNodeModels.PythonStringNode>
+    <PythonNodeModels.PythonStringNode guid="d81965c3-6dbe-4147-92e1-6df691098342" type="PythonNodeModels.PythonStringNode" nickname="Python Script From String" x="470.922217877443" y="263.806160131466" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </PythonNodeModels.PythonStringNode>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="1948d183-632b-43bb-a220-847734ffded1" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="82.3979752518008" y="190.28209561909" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;OUT = IN[0]&quot;;&#xA;&quot;OUT = UnwrapElement(IN[0])&quot;;" ShouldFocus="false" />
+    <CoreNodeModels.Watch guid="494d0d07-db8d-47af-bffe-1cf438330bda" type="CoreNodeModels.Watch" nickname="Watch" x="699.621777940252" y="152.84759940718" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Watch guid="99e8c9a5-233a-4e01-8bec-552a38ce5453" type="CoreNodeModels.Watch" nickname="Watch" x="702.616477584362" y="328.22134230264" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Watch guid="3ebc3570-d8ed-44fc-a537-0c1f0fd8b2e8" type="CoreNodeModels.Watch" nickname="Watch" x="693.24169589896" y="746.428014040858" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <PythonNodeModels.PythonStringNode guid="0a06c2fa-90b2-498a-bca5-fcc40f7e70bf" type="PythonNodeModels.PythonStringNode" nickname="Python Script From String" x="463.389559652681" y="648.854609578167" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </PythonNodeModels.PythonStringNode>
+    <CoreNodeModels.Watch guid="ba7b024f-f9ef-444d-af3e-9977d1880800" type="CoreNodeModels.Watch" nickname="Watch" x="694.85230490645" y="536.974987123561" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <DSRevitNodesUI.Views guid="e25167d0-e9a8-4b83-aca2-deb14b6383d5" type="DSRevitNodesUI.Views" nickname="Views" x="208.099001114903" y="485.707248140872" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="18:1ST FLOOR" />
+    <PythonNodeModels.PythonStringNode guid="b45a1e8e-70da-43bd-ae10-020ea0297a67" type="PythonNodeModels.PythonStringNode" nickname="Python Script From String" x="463.395994482052" y="457.422228172016" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </PythonNodeModels.PythonStringNode>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="f0334a60-1251-4977-81ac-a7acae987879" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-61.501699179962" y="576.348209365843" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;OUT = IN[0].__class__.__doc__&quot;;&#xA;&quot;OUT = UnwrapElement(IN[0]).__class__.__doc__&quot;;" ShouldFocus="false" />
+    <DSRevitNodesUI.Views guid="7dcb059b-4e0b-499b-85fa-4b3525975729" type="DSRevitNodesUI.Views" nickname="Views" x="1459.64835121766" y="257.622840696247" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="18:1ST FLOOR" />
+    <PythonNodeModels.PythonStringNode guid="ee3b4460-72ea-46bb-91e5-38394b5bc521" type="PythonNodeModels.PythonStringNode" nickname="Python Script From String" x="1657.10477858653" y="129.0016962057" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </PythonNodeModels.PythonStringNode>
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="b2c944c1-5a9a-4c54-83c8-964aeb389f78" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="911.696669012303" y="-4.14940455260695" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;&#xA;import clr&#xA;clr.AddReference('RevitNodes')&#xA;import Revit&#xA;# Adds ToDSType (bool) extension method to Wrapped elements&#xA;clr.ImportExtensions(Revit.Elements)&#xA;# Adds ToProtoType, ToRevitType geometry conversion extension methods to objects&#xA;clr.ImportExtensions(Revit.GeometryConversion)&#xA;&#xA;OUT = UnwrapElement(IN[0]).ToDSType(1).__class__.__doc__&#xA;&quot;;" ShouldFocus="false" />
+    <CoreNodeModels.Watch guid="5be4fda0-45ce-48cf-a48c-af5be3746462" type="CoreNodeModels.Watch" nickname="Watch" x="1866.74075559971" y="129.258635651819" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="1a97202e-ad05-4495-b16c-41b89391cdd8" start_index="0" end="ffe05f62-8d1e-414e-b021-37a8346a719f" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="1a97202e-ad05-4495-b16c-41b89391cdd8" start_index="0" end="d81965c3-6dbe-4147-92e1-6df691098342" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="ffe05f62-8d1e-414e-b021-37a8346a719f" start_index="0" end="494d0d07-db8d-47af-bffe-1cf438330bda" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="d81965c3-6dbe-4147-92e1-6df691098342" start_index="0" end="99e8c9a5-233a-4e01-8bec-552a38ce5453" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="1948d183-632b-43bb-a220-847734ffded1" start_index="0" end="ffe05f62-8d1e-414e-b021-37a8346a719f" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="1948d183-632b-43bb-a220-847734ffded1" start_index="1" end="d81965c3-6dbe-4147-92e1-6df691098342" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="0a06c2fa-90b2-498a-bca5-fcc40f7e70bf" start_index="0" end="3ebc3570-d8ed-44fc-a537-0c1f0fd8b2e8" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="e25167d0-e9a8-4b83-aca2-deb14b6383d5" start_index="0" end="0a06c2fa-90b2-498a-bca5-fcc40f7e70bf" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="e25167d0-e9a8-4b83-aca2-deb14b6383d5" start_index="0" end="b45a1e8e-70da-43bd-ae10-020ea0297a67" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b45a1e8e-70da-43bd-ae10-020ea0297a67" start_index="0" end="ba7b024f-f9ef-444d-af3e-9977d1880800" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="f0334a60-1251-4977-81ac-a7acae987879" start_index="0" end="b45a1e8e-70da-43bd-ae10-020ea0297a67" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="f0334a60-1251-4977-81ac-a7acae987879" start_index="1" end="0a06c2fa-90b2-498a-bca5-fcc40f7e70bf" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="7dcb059b-4e0b-499b-85fa-4b3525975729" start_index="0" end="ee3b4460-72ea-46bb-91e5-38394b5bc521" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="ee3b4460-72ea-46bb-91e5-38394b5bc521" start_index="0" end="5be4fda0-45ce-48cf-a48c-af5be3746462" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b2c944c1-5a9a-4c54-83c8-964aeb389f78" start_index="0" end="ee3b4460-72ea-46bb-91e5-38394b5bc521" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="2ab49a35-6089-4cdc-a8e1-4336e3749d5d" annotationText="Dynamo" left="684.85230490645" top="490.974987123561" width="174" height="183" fontSize="30" InitialTop="536.974987123561" InitialHeight="167" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="ba7b024f-f9ef-444d-af3e-9977d1880800" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="282842e2-441e-4c76-8314-ca0c06972e50" annotationText="Revit API" left="683.24169589896" top="700.428014040858" width="187" height="183" fontSize="30" InitialTop="746.428014040858" InitialHeight="167" TextblockHeight="36" backgrouund="#FFC1D676">
+      <Models ModelGuid="3ebc3570-d8ed-44fc-a537-0c1f0fd8b2e8" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-19.1209982471642" eyeY="77.5905251742951" eyeZ="37.549503340831" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
